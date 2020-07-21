@@ -1,0 +1,46 @@
+<!--
+  Copyright 2020 Google LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<html>
+  <head>
+    <title>Austin recycling drop-off locations</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="app.js"></script>
+
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&v=weekly&libraries=places&callback=initialize&map_ids=YOUR_MAP_ID"
+    ></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <div id="panel" class="closed"></div>
+    <div class="hidden">
+      <div id="pac-card">
+        <div id="pac-title">Find the nearest location</div>
+        <div id="pac-container">
+          <input
+            id="pac-input"
+            type="text"
+            placeholder="Enter an address"
+            class="pac-target-input"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

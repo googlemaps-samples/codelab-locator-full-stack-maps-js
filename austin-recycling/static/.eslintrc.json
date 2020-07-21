@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "jest"],
+  "rules": {
+    "no-var": 2,
+    "padding-line-between-statements": [
+      1,
+      {
+        "blankLine": "always",
+        "prev": ["*"],
+        "next": [
+          "if",
+          "block",
+          "block-like",
+          "switch",
+          "class",
+          "function",
+          "try",
+          "for",
+          "do",
+          "while",
+          "with"
+        ]
+      }
+    ],
+    "prefer-arrow-callback": 2
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "google": "readonly"
+  }
+}

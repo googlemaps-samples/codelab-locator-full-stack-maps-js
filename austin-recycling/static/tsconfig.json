@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "types": ["googlemaps", "geojson"]
+  },
+  "include": ["*.ts"]
+}
