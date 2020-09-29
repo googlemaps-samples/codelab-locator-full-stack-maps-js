@@ -30,6 +30,7 @@ jobs:
         run: |
           rm austin-recycling/static/app.js
           cd austin-recycling/static
+          npm i
           npm run build
           git config --global user.name 'googlemaps-bot'
           git config --global user.email 'googlemaps-bot@users.noreply.github.com'
