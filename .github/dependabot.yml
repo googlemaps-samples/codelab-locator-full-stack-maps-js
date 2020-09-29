@@ -15,6 +15,6 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/static"
+    directory: "/austin-recyling/static"
     schedule:
       interval: "monthly"
