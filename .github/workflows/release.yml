@@ -16,16 +16,15 @@ name: Release
 on:
   push:
     branches:
-      - master
       - main
 jobs:
   release:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GOOGLE_MAPS_BOT }}
+          token: ${{ secrets.SYNCED_GITHUB_TOKEN_REPO }}
       - name: Update app.js on default branch
         run: |
           rm austin-recycling/static/app.js
